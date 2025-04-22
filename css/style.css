@@ -38,7 +38,7 @@ ul {
 
 .active {
   color: var(--color-secondary);
-  font-weight: 700;
+  -webkit-text-stroke-width: 1.5px;
 }
 
 .back {
@@ -328,7 +328,6 @@ section h2 {
 
 /* Alert */
 .alert {
-  background: red;
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -340,4 +339,28 @@ section h2 {
 
 .alert-error {
   background: red;
+}
+
+.input-error {
+  border-color: red;
+  border-width: 2px;
+}
+
+.bg-overlay {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  opacity: .1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#search-results-heading h2 {
+  text-transform: initial;
 }
