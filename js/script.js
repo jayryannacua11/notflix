@@ -141,8 +141,8 @@ const displayMovieDetails = async () => {
         <div class="details-bottom">
           <h2>Movie Info</h2>
           <ul>
-            <li><span class="text-secondary">Budget:</span> $${formatMoney(movie.budget)}</li>
-            <li><span class="text-secondary">Revenue:</span> $${formatMoney(movie.revenue)}</li>
+            <li><span class="text-secondary">Budget:</span> ${movie.budget !== 0 ? `$${formatMoney(movie.budget)}` : 'N/A'}</li>
+            <li><span class="text-secondary">Revenue:</span> ${movie.revenue !== 0 ? `$${formatMoney(movie.revenue)}`: 'N/A'}</li>
             <li><span class="text-secondary">Runtime:</span> ${movie.runtime} minutes</li>
             <li><span class="text-secondary">Status:</span> ${movie.status}</li>
           </ul>
