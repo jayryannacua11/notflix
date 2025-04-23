@@ -224,7 +224,8 @@ const search = async () => {
   global.search.term = urlParams.get('search-term');
 
   if (!global.search.term){
-    showAlert('Please enter a valid input', 'alert-error')
+    showAlert('Please enter a valid input', 'alert-error');
+    return;
 
     // inputSearch.classList.add('input-error');
     // return;
