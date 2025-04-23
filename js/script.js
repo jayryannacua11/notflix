@@ -524,6 +524,7 @@ function init(){
             displaySlider();
             displayPopularMovies();
             break;
+        case '/shows':
         case '/shows.html':
             displayPopularShows();
             break;
