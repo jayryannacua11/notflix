@@ -331,6 +331,8 @@ section h2 {
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
 }
 
 .alert-success {

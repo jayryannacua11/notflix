@@ -237,7 +237,7 @@ const search = async () => {
   global.search.totalResults = total_results;
 
   if (results.length === 0){
-    showAlert('No reults found');
+    showAlert('No reults found', 'alert-error');
     return;
   }
 
